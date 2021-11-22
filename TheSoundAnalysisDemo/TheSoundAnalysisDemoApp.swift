@@ -11,7 +11,7 @@ import SwiftUI
 struct TheSoundAnalysisDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SpeechRecognitionView()
         }
     }
 }
