@@ -53,6 +53,7 @@
 				7BB630E0274588160016225E /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		7BB630E0274588160016225E /* Products */ = {
 			isa = PBXGroup;
