@@ -14,6 +14,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D60314E27E4E34C0072C711 /* DEVELOPMENT_TEAM.template.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.template.xcconfig; sourceTree = "<group>"; };
+		3D60314F27E4E34C0072C711 /* DEVELOPMENT_TEAM.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.xcconfig; sourceTree = "<group>"; };
+		3D60315027E4E34C0072C711 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		7BB630DF274588160016225E /* TheSoundAnalysisDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSoundAnalysisDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB630E2274588160016225E /* TheSoundAnalysisDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSoundAnalysisDemoApp.swift; sourceTree = "<group>"; };
 		7BB630E4274588160016225E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,10 +35,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D60314D27E4E34C0072C711 /* Xcode-config */ = {
+			isa = PBXGroup;
+			children = (
+				3D60314E27E4E34C0072C711 /* DEVELOPMENT_TEAM.template.xcconfig */,
+				3D60314F27E4E34C0072C711 /* DEVELOPMENT_TEAM.xcconfig */,
+				3D60315027E4E34C0072C711 /* Shared.xcconfig */,
+			);
+			path = "Xcode-config";
+			sourceTree = "<group>";
+		};
 		7BB630D6274588160016225E = {
 			isa = PBXGroup;
 			children = (
 				7BB630E1274588160016225E /* TheSoundAnalysisDemo */,
+				3D60314D27E4E34C0072C711 /* Xcode-config */,
 				7BB630E0274588160016225E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,6 +161,7 @@
 /* Begin XCBuildConfiguration section */
 		7BB630EB274588180016225E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D60315027E4E34C0072C711 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -208,6 +223,7 @@
 		};
 		7BB630EC274588180016225E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D60315027E4E34C0072C711 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -266,10 +282,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheSoundAnalysisDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access will be used for speech recognition";
@@ -287,6 +303,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tustanowski.kamil.TheSoundAnalysisDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,10 +315,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheSoundAnalysisDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access will be used for speech recognition";
@@ -319,6 +336,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tustanowski.kamil.TheSoundAnalysisDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
